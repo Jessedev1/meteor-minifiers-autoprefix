@@ -1,23 +1,23 @@
 Package.describe({
-  name: 'seba:minifiers-autoprefixer',
+  name: 'jessedev:minifiers-autoprefixer',
   version: '2.0.1',
   summary: 'Standard minifiers used with Meteor apps by default + css autoprefixer.',
-  git: 'https://github.com/sebakerckhof/meteor-minifiers-autoprefix.git',
+  git: 'https://github.com/Jessedev1/meteor-minifiers-autoprefix.git',
   documentation: 'README.md'
 });
 
 Package.registerBuildPlugin({
   name: "minifyStdCSS",
   use: [
-    'minifier-css@1.5.3',
-    'ecmascript@0.14.3'
+    'minifier-css@2.0.0',
+    'ecmascript@0.16.10'
   ],
   npmDependencies: {
-    "source-map": "0.7.3",
-    "lru-cache": "6.0.0",
-    "postcss": "8.1.1",
-    "autoprefixer": "10.0.1",
-    "@babel/runtime": "7.11.2"
+    "source-map": "0.7.4",
+    "lru-cache": "11.0.2",
+    "postcss": "8.5.1",
+    "autoprefixer": "10.4.20",
+    "@babel/runtime": "7.26.7"
   },
   sources: [
     'plugin/minify-css.js'
